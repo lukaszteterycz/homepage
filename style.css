@@ -1,24 +1,100 @@
 body {
-  background: rgb(169, 124, 221);
+  background: #fefefe;
+  color: #333;
 }
 
+.about {
+  background: #80808029;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.about_link {
+  color: #28685e;
+}
+
+.about__header {
+  color: #1737a0;
+}
+
+.about__paragraph {
+  color: #007090;
+}
+
+.diary {
+  background: #c9c9c929;
+  padding: 20px;
+}
+
+.diary__heading {
+  color: #3c518b;
+  font-size: 55px;
+  text-align: center;
+}
+
+.diary__heading-day {
+  color: #28685e;
+  font-size: 25px;
+}
+
+.diary__day {
+  margin-bottom: 45px;
+  border-bottom: 5px #7184ca solid;
+}
+
+.footer {
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  background: #3d3d3d;
+  color: #fff;
+}
 .header {
-  color: pink;
+  color: #03256c;
 }
 
-.heading {
-  color: rgb(134, 53, 66);
+.header__heading {
+  color: #100a5f;
 }
 
-.sectionHeader {
-  font-size: 45px;
-  color: #1460aa;
+.main {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  padding-top: 50px;
 }
 
-.diaryHeader {
-  color: #164923;
+.navigation {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 16px;
+  background: #e3e3e3;
 }
 
-.paragraph {
-  color: rebeccapurple;
+.navigation__link {
+  color: #28685e;
+}
+
+.diary__paragraph {
+  color: #007090;
+}
+
+.diary__link {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #28685e;
+  text-decoration: none;
 }
