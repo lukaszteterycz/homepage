@@ -13,7 +13,7 @@ console.log("Nazywam się " + name + " i mam " + age + " lat");
 const about = document.querySelector(".about__paragraph--js");
 console.log(about.innerHTML);
 
-about.innerHTML = `<strong>Nazywam się</strong> ${name} i mam ${age} lat`;
+// about.innerHTML = `<strong>Nazywam się</strong> ${name} i mam ${age} lat`;
 
 const paragraphs = document.querySelectorAll("p");
 
