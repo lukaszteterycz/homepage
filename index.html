@@ -1,118 +1,168 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <header class="navigation">
-      <a class="navigation__link" href="index.html">Strona Główna</a>
-      <a class="navigation__link" href="podstrona.html">Podstrona</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="normalize.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Strona Główna</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="podstrona.html">Podstrona</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main id="top" class="main">
+    <header class="header">
+      <h1 class="header__title">Łukasz Teterycz - Strona Domowa</h1>
     </header>
-    <main id="top" class="main">
-      <header class="header">
-        <h1 class="header__title">Łukasz Teterycz - Strona Domowa</h1>
-      </header>
-      <section class="about">
-        <h2 class="about__header">Kim Jestem?</h2>
-        <p
-          class="about__paragraph about__paragraph--orange about__paragraph--js"
-        >
-          Hejo, jestem <strong>Łukasz</strong>. Zajmuje się marketingiem
-          internetowym oraz tworzeniem stron www. Posiadam status Partnera w
-          Google jako potwierdzenie wiedzy i skuteczności w prowadzaeniu
-          <em>kampanii</em> na platformie Google Ads.<br />
-          <a class="about__link" href="#dziennik">Przejdź do dziennika</a>
+    <section class="about">
+      <h2 class="about__header">Kim Jestem?</h2>
+      <p class="about__paragraph about__paragraph--orange about__paragraph--js">
+        Hejo, jestem <strong>Łukasz</strong>. Zajmuje się marketingiem
+        internetowym oraz tworzeniem stron www. Posiadam status Partnera w
+        Google jako potwierdzenie wiedzy i skuteczności w prowadzaeniu
+        <em>kampanii</em> na platformie Google Ads.<br />
+        <a class="about__link" href="#dziennik">Przejdź do dziennika</a>
+      </p>
+    </section>
+    <h2 class="diary__header">Dziennik</h2>
+    <section class="diary" id="dziennik">
+      <section class="day">
+        <h3 class="day__header">Dzień I</h3>
+        <img src="img/1.jpg" alt="dzien1" />
+        <p class="day__paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          sequi architecto ullam officiis aperiam tempore excepturi ea numquam
+          odit sed iusto, modi nihil impedit placeat distinctio corporis ab,
+          optio debitis.
+          <a class="day__link" href="day1.html">Przejdź do artykułu</a>
         </p>
       </section>
-      <section class="diary" id="dziennik">
-        <h2 class="diary__header">Dziennik</h2>
-        <section class="day">
-          <h3 class="day__header">Dzień I</h3>
-          <img src="img/1.jpg" alt="dzien1" />
-          <p class="day__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            sequi architecto ullam officiis aperiam tempore excepturi ea numquam
-            odit sed iusto, modi nihil impedit placeat distinctio corporis ab,
-            optio debitis.
-            <a class="day__link" href="day1.html">Przejdź do artykułu</a>
-          </p>
-        </section>
-        <section class="day">
-          <h3 class="day__header">Dzień II</h3>
-          <img src="img/2.jpg" alt="dzien2" />
-          <p class="day__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            sequi architecto ullam officiis aperiam tempore excepturi ea numquam
-            odit sed iusto, modi nihil impedit placeat distinctio corporis ab,
-            optio debitis.
-            <a class="day__link" href="day2.html">Przejdź do artykułu</a>
-          </p>
-        </section>
-        <section class="day">
-          <h3 class="day__header">Dzień III</h3>
-          <img src="img/3.jpg" alt="dzien3" />
-          <p class="day__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            sequi architecto ullam officiis aperiam tempore excepturi ea numquam
-            odit sed iusto, modi nihil impedit placeat distinctio corporis ab,
-            optio debitis.
-            <a class="day__link" href="day3.html">Przejdź do artykułu</a>
-          </p>
-        </section>
-        <section class="day">
-          <h3 class="day__header">Dzień IV</h3>
-          <img src="img/4.jpg" alt="dzien4" />
-          <p class="day__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            sequi architecto ullam officiis aperiam tempore excepturi ea numquam
-            odit sed iusto, modi nihil impedit placeat distinctio corporis ab,
-            optio debitis.
-            <a class="day__link" href="day4.html">Przejdź do artykułu</a>
-          </p>
-        </section>
-        <section class="day">
-          <h3 class="day__header">Dzień V</h3>
-          <img src="img/5.jpg" alt="dzien5" />
-          <p class="day__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            sequi architecto ullam officiis aperiam tempore excepturi ea numquam
-            odit sed iusto, modi nihil impedit placeat distinctio corporis ab,
-            optio debitis.
-            <a class="day__link" href="day5.html">Przejdź do artykułu</a>
-          </p>
-        </section>
-        <section class="day">
-          <h3 class="day__header">Dzień VI</h3>
-          <img src="img/6.jpg" alt="dzien6" />
-          <p class="day__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            sequi architecto ullam officiis aperiam tempore excepturi ea numquam
-            odit sed iusto, modi nihil impedit placeat distinctio corporis ab,
-            optio debitis.
-            <a class="day__link" href="day6.html">Przejdź do artykułu</a>
-          </p>
-        </section>
-        <section class="day">
-          <h3 class="day__header">Dzień VII</h3>
-          <img src="img/7.jpg" alt="dzien7" />
-          <p class="day__paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            sequi architecto ullam officiis aperiam tempore excepturi ea numquam
-            odit sed iusto, modi nihil impedit placeat distinctio corporis ab,
-            optio debitis.
-            <a class="day__link" href="day7.html">Przejdź do artykułu</a>
-          </p>
-        </section>
+      <section class="day">
+        <h3 class="day__header">Dzień II</h3>
+        <img src="img/2.jpg" alt="dzien2" />
+        <p class="day__paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          sequi architecto ullam officiis aperiam tempore excepturi ea numquam
+          odit sed iusto, modi nihil impedit placeat distinctio corporis ab,
+          optio debitis.
+          <a class="day__link" href="day2.html">Przejdź do artykułu</a>
+        </p>
       </section>
-    </main>
-    <footer class="footer">
-      <a href="#top" class="top">Na górę</a>
-      Strona domowa LukasTe - szkolenie WTFL Co ten frontend.
-    </footer>
-    <script src="main.js"></script>
-  </body>
+      <section class="day">
+        <h3 class="day__header">Dzień III</h3>
+        <img src="img/3.jpg" alt="dzien3" />
+        <p class="day__paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          sequi architecto ullam officiis aperiam tempore excepturi ea numquam
+          odit sed iusto, modi nihil impedit placeat distinctio corporis ab,
+          optio debitis.
+          <a class="day__link" href="day3.html">Przejdź do artykułu</a>
+        </p>
+      </section>
+      <section class="day">
+        <h3 class="day__header">Dzień IV</h3>
+        <img src="img/4.jpg" alt="dzien4" />
+        <p class="day__paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          sequi architecto ullam officiis aperiam tempore excepturi ea numquam
+          odit sed iusto, modi nihil impedit placeat distinctio corporis ab,
+          optio debitis.
+          <a class="day__link" href="day4.html">Przejdź do artykułu</a>
+        </p>
+      </section>
+      <section class="day">
+        <h3 class="day__header">Dzień V</h3>
+        <img src="img/5.jpg" alt="dzien5" />
+        <p class="day__paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          sequi architecto ullam officiis aperiam tempore excepturi ea numquam
+          odit sed iusto, modi nihil impedit placeat distinctio corporis ab,
+          optio debitis.
+          <a class="day__link" href="day5.html">Przejdź do artykułu</a>
+        </p>
+      </section>
+      <section class="day">
+        <h3 class="day__header">Dzień VI</h3>
+        <img src="img/6.jpg" alt="dzien6" />
+        <p class="day__paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          sequi architecto ullam officiis aperiam tempore excepturi ea numquam
+          odit sed iusto, modi nihil impedit placeat distinctio corporis ab,
+          optio debitis.
+          <a class="day__link" href="day6.html">Przejdź do artykułu</a>
+        </p>
+      </section>
+      <section class="day">
+        <h3 class="day__header">Dzień VII</h3>
+        <img src="img/7.jpg" alt="dzien7" />
+        <p class="day__paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          sequi architecto ullam officiis aperiam tempore excepturi ea numquam
+          odit sed iusto, modi nihil impedit placeat distinctio corporis ab,
+          optio debitis.
+          <a class="day__link" href="day7.html">Przejdź do artykułu</a>
+        </p>
+      </section>
+    </section>
+    <section class="glossary">
+      <h3 class="day__header">Glossary</h3>
+      <dl>
+        <dt>CSS</dt>
+        <dd>Style (to co widzisz jak jest ładne albo brzydkie)</dd>
+        <dt>HTML</dt>
+        <dd>Treść + szkielet strony</dd>
+        <dt>JavaScript</dt>
+        <dt>Es6</dt>
+        <dd>Rzeczy, których teraz się uczę</dd>
+      </dl>
+    </section>
+
+    <section class="data">
+      <h3 class="day__header">Tabela</h3>
+      <table class="table">
+        <caption>Oceny z I semestru z przedmiotu WTF</caption>
+        <thead>
+          <tr>
+            <th>Imię nazwisko</th>
+            <th>Ocena</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Łukasz Teterycz</td>
+            <td>4</td>
+            <td>19.06.2019</td>
+          </tr>
+          <tr>
+            <td>Lukas Tet</td>
+            <td>3</td>
+            <td>20.06.2019</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+
+  </main>
+  <footer class="footer">
+    <a href="#top" class="top">Na górę</a>
+    Strona domowa LukasTe - szkolenie WTF: Co ten frontend.
+  </footer>
+  <script src="main.js"></script>
+</body>
+
 </html>
