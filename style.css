@@ -16,6 +16,7 @@ body {
   background: #80808029;
   margin-bottom: 20px;
   padding: 10px;
+  grid-area: about;
 }
 
 .about_link {
@@ -32,6 +33,10 @@ body {
 
 .about__paragraph--orange {
   color: orangered;
+}
+
+.content {
+  grid-area: content;
 }
 
 .diary {
@@ -83,6 +88,7 @@ body {
 
 .header {
   color: #03256c;
+  grid-area: header;
 }
 
 .header__title {
@@ -94,6 +100,9 @@ body {
   margin: 20px auto;
   padding-top: 50px;
   width: 100%;
+  display: grid;
+  grid-template-areas: "header header" "about content";
+  grid-template-columns: 150px 1fr;
 }
 
 .site-header {
@@ -104,6 +113,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  min-height: 48px;
 }
 
 .navigation {}
@@ -134,4 +144,38 @@ body {
   position: fixed;
   right: 20px;
   text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .diary {
+    grid-template-columns: 1fr;
+  }
+  .navigation__list {
+    display: none;
+    flex-direction: column;
+  }
+  .navigation__list--visible {
+    display: flex;
+  }
+  .navigation__item {
+    margin: 16px;
+  }
+  .navigation__switcher {
+    border: none;
+    font-size: 25px;
+    background: none;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  }
+  .main {
+    grid-template-areas: "header" "content" "about";
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 640px) {
+  .navigation__switcher {
+    display: none;
+  }
 }
